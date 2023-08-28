@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C83620BA41D9418FC292C5E19224352 /* PMSuperButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EC33790374497D261029FC0B3AB9C3 /* PMSuperButton-dummy.m */; };
+		52A1A2B70FB6B88D39258889B25FB772 /* PMSuperButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 055184897EAC9702C7B5A1785D6CCD81 /* PMSuperButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1E32D22DAEF8847F088FEBAF276037D /* Pods-PrayerDiary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 803A2E169637935270B79C4BADF7E7D8 /* Pods-PrayerDiary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE6744CD1E871D6668A042DFC6905F85 /* Pods-PrayerDiary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C9F429F09BB95A71AD320EEDC11C03 /* Pods-PrayerDiary-dummy.m */; };
+		F086E5BD1D49A9E5C0CF34A3521D569A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F31C3EA7585364DF24299D30FC12552A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F43F369E24A39D0B64F04E51BCAA7AB9 /* PMSuperButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1300350313ACD16AB39905674C87ED24 /* PMSuperButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7576BF69FCDE1214C1D0BE274190E5D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 224E2137470271414147FB865B1307B8;
+			remoteInfo = PMSuperButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		055184897EAC9702C7B5A1785D6CCD81 /* PMSuperButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PMSuperButton-umbrella.h"; sourceTree = "<group>"; };
+		09A8A36D89C19F1207A4210B9331F446 /* Pods-PrayerDiary-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PrayerDiary-Info.plist"; sourceTree = "<group>"; };
+		0B53ADCE60F451BE3C50A15494832044 /* Pods-PrayerDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PrayerDiary.release.xcconfig"; sourceTree = "<group>"; };
+		0F1E0EA4CD57D6017CDA418C7C829D97 /* PMSuperButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PMSuperButton.release.xcconfig; sourceTree = "<group>"; };
+		1300350313ACD16AB39905674C87ED24 /* PMSuperButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PMSuperButton.swift; path = Sources/PMSuperButton.swift; sourceTree = "<group>"; };
+		25148A8CECC01121F084F57285B15C10 /* Pods-PrayerDiary-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PrayerDiary-frameworks.sh"; sourceTree = "<group>"; };
+		522E9EA24B6A6621ABDB20093123BF9B /* Pods-PrayerDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PrayerDiary.debug.xcconfig"; sourceTree = "<group>"; };
+		5800A4B4F6B67D9C3723078F3F23DB39 /* PMSuperButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PMSuperButton-prefix.pch"; sourceTree = "<group>"; };
+		5C233BBCD61485A5979EE8D78867A57B /* Pods-PrayerDiary */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PrayerDiary"; path = Pods_PrayerDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		77EC33790374497D261029FC0B3AB9C3 /* PMSuperButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PMSuperButton-dummy.m"; sourceTree = "<group>"; };
+		803A2E169637935270B79C4BADF7E7D8 /* Pods-PrayerDiary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PrayerDiary-umbrella.h"; sourceTree = "<group>"; };
+		9D6570AEC61786499F90FAE413D0E91C /* Pods-PrayerDiary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PrayerDiary.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A597061F5B06C4EC0152B59C9FC9E7DD /* Pods-PrayerDiary-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PrayerDiary-acknowledgements.plist"; sourceTree = "<group>"; };
+		C3732EBD6991A85694503036030C1FB2 /* PMSuperButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PMSuperButton-Info.plist"; sourceTree = "<group>"; };
+		C68C9B93DF5B4A982CB2140092DEE812 /* PMSuperButton */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PMSuperButton; path = PMSuperButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF11AE43B79527797522E3AB13A3E4F0 /* PMSuperButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PMSuperButton.modulemap; sourceTree = "<group>"; };
+		D72CB324ED8CCF37A1E2EAFFE5CB9E88 /* PMSuperButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PMSuperButton.debug.xcconfig; sourceTree = "<group>"; };
+		E7C9F429F09BB95A71AD320EEDC11C03 /* Pods-PrayerDiary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PrayerDiary-dummy.m"; sourceTree = "<group>"; };
+		F64AA4B41917497AB3D065A17BA139D7 /* Pods-PrayerDiary-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PrayerDiary-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70E29D64BA06FEE738E65AB0BC44ABE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F31C3EA7585364DF24299D30FC12552A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A74656DD4E13F25B7309600CF9769F7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F086E5BD1D49A9E5C0CF34A3521D569A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B95C1B67211D01C8F2F2588C20907C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35668B87DA634B163E98B65185906995 /* PMSuperButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2DCC91D8FF41B521E171067CDCC40BE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C68C9B93DF5B4A982CB2140092DEE812 /* PMSuperButton */,
+				5C233BBCD61485A5979EE8D78867A57B /* Pods-PrayerDiary */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35668B87DA634B163E98B65185906995 /* PMSuperButton */ = {
+			isa = PBXGroup;
+			children = (
+				1300350313ACD16AB39905674C87ED24 /* PMSuperButton.swift */,
+				9AB101F8B444B21521010CB9CA197689 /* Support Files */,
+			);
+			name = PMSuperButton;
+			path = PMSuperButton;
+			sourceTree = "<group>";
+		};
+		3ACFF5DC65AC9D778C39B9786897B246 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E10A1FD8E206A5482D1ED87BC92D004 /* Pods-PrayerDiary */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5E10A1FD8E206A5482D1ED87BC92D004 /* Pods-PrayerDiary */ = {
+			isa = PBXGroup;
+			children = (
+				9D6570AEC61786499F90FAE413D0E91C /* Pods-PrayerDiary.modulemap */,
+				F64AA4B41917497AB3D065A17BA139D7 /* Pods-PrayerDiary-acknowledgements.markdown */,
+				A597061F5B06C4EC0152B59C9FC9E7DD /* Pods-PrayerDiary-acknowledgements.plist */,
+				E7C9F429F09BB95A71AD320EEDC11C03 /* Pods-PrayerDiary-dummy.m */,
+				25148A8CECC01121F084F57285B15C10 /* Pods-PrayerDiary-frameworks.sh */,
+				09A8A36D89C19F1207A4210B9331F446 /* Pods-PrayerDiary-Info.plist */,
+				803A2E169637935270B79C4BADF7E7D8 /* Pods-PrayerDiary-umbrella.h */,
+				522E9EA24B6A6621ABDB20093123BF9B /* Pods-PrayerDiary.debug.xcconfig */,
+				0B53ADCE60F451BE3C50A15494832044 /* Pods-PrayerDiary.release.xcconfig */,
+			);
+			name = "Pods-PrayerDiary";
+			path = "Target Support Files/Pods-PrayerDiary";
+			sourceTree = "<group>";
+		};
+		9AB101F8B444B21521010CB9CA197689 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF11AE43B79527797522E3AB13A3E4F0 /* PMSuperButton.modulemap */,
+				77EC33790374497D261029FC0B3AB9C3 /* PMSuperButton-dummy.m */,
+				C3732EBD6991A85694503036030C1FB2 /* PMSuperButton-Info.plist */,
+				5800A4B4F6B67D9C3723078F3F23DB39 /* PMSuperButton-prefix.pch */,
+				055184897EAC9702C7B5A1785D6CCD81 /* PMSuperButton-umbrella.h */,
+				D72CB324ED8CCF37A1E2EAFFE5CB9E88 /* PMSuperButton.debug.xcconfig */,
+				0F1E0EA4CD57D6017CDA418C7C829D97 /* PMSuperButton.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PMSuperButton";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				2B95C1B67211D01C8F2F2588C20907C8 /* Pods */,
+				2DCC91D8FF41B521E171067CDCC40BE3 /* Products */,
+				3ACFF5DC65AC9D778C39B9786897B246 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		13133AAAE29FED202B879E43B4BA89D8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1E32D22DAEF8847F088FEBAF276037D /* Pods-PrayerDiary-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF57E94084BB48142A1BF01819997BC2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A1A2B70FB6B88D39258889B25FB772 /* PMSuperButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		224E2137470271414147FB865B1307B8 /* PMSuperButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 979B884A5295FDAC85E85818C765D033 /* Build configuration list for PBXNativeTarget "PMSuperButton" */;
+			buildPhases = (
+				DF57E94084BB48142A1BF01819997BC2 /* Headers */,
+				01EBAD3377A39AA79D93C0D9DD280883 /* Sources */,
+				A74656DD4E13F25B7309600CF9769F7B /* Frameworks */,
+				756EF63F2B3FEF5B12CC4A5FF541F65C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PMSuperButton;
+			productName = PMSuperButton;
+			productReference = C68C9B93DF5B4A982CB2140092DEE812 /* PMSuperButton */;
+			productType = "com.apple.product-type.framework";
+		};
+		B3FC6FBFF00D7771FA240E599EF03B6F /* Pods-PrayerDiary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B21A117F361F12856C97799C7C555832 /* Build configuration list for PBXNativeTarget "Pods-PrayerDiary" */;
+			buildPhases = (
+				13133AAAE29FED202B879E43B4BA89D8 /* Headers */,
+				FF49BA9E45509C95655B53E90E63CD54 /* Sources */,
+				70E29D64BA06FEE738E65AB0BC44ABE0 /* Frameworks */,
+				D215F744F0D46301881CFC8A7970DF36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE8755D05E70D09EB03244F88415F196 /* PBXTargetDependency */,
+			);
+			name = "Pods-PrayerDiary";
+			productName = Pods_PrayerDiary;
+			productReference = 5C233BBCD61485A5979EE8D78867A57B /* Pods-PrayerDiary */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 2DCC91D8FF41B521E171067CDCC40BE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				224E2137470271414147FB865B1307B8 /* PMSuperButton */,
+				B3FC6FBFF00D7771FA240E599EF03B6F /* Pods-PrayerDiary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		756EF63F2B3FEF5B12CC4A5FF541F65C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D215F744F0D46301881CFC8A7970DF36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01EBAD3377A39AA79D93C0D9DD280883 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F43F369E24A39D0B64F04E51BCAA7AB9 /* PMSuperButton.swift in Sources */,
+				1C83620BA41D9418FC292C5E19224352 /* PMSuperButton-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF49BA9E45509C95655B53E90E63CD54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE6744CD1E871D6668A042DFC6905F85 /* Pods-PrayerDiary-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE8755D05E70D09EB03244F88415F196 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PMSuperButton;
+			target = 224E2137470271414147FB865B1307B8 /* PMSuperButton */;
+			targetProxy = 7576BF69FCDE1214C1D0BE274190E5D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0EB2D83733003193FE5B5842E994B8D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D72CB324ED8CCF37A1E2EAFFE5CB9E88 /* PMSuperButton.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PMSuperButton/PMSuperButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PMSuperButton/PMSuperButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PMSuperButton/PMSuperButton.modulemap";
+				PRODUCT_MODULE_NAME = PMSuperButton;
+				PRODUCT_NAME = PMSuperButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1A8CB9E59F95720AE3C38F71E961892C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 522E9EA24B6A6621ABDB20093123BF9B /* Pods-PrayerDiary.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PrayerDiary/Pods-PrayerDiary-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PrayerDiary/Pods-PrayerDiary.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		49402E960250002684DCE152DC342CE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B53ADCE60F451BE3C50A15494832044 /* Pods-PrayerDiary.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PrayerDiary/Pods-PrayerDiary-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PrayerDiary/Pods-PrayerDiary.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D1096F1B22DDDAA6528E04BBC506DC72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F1E0EA4CD57D6017CDA418C7C829D97 /* PMSuperButton.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PMSuperButton/PMSuperButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PMSuperButton/PMSuperButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PMSuperButton/PMSuperButton.modulemap";
+				PRODUCT_MODULE_NAME = PMSuperButton;
+				PRODUCT_NAME = PMSuperButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */,
+				C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		979B884A5295FDAC85E85818C765D033 /* Build configuration list for PBXNativeTarget "PMSuperButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EB2D83733003193FE5B5842E994B8D3 /* Debug */,
+				D1096F1B22DDDAA6528E04BBC506DC72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B21A117F361F12856C97799C7C555832 /* Build configuration list for PBXNativeTarget "Pods-PrayerDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A8CB9E59F95720AE3C38F71E961892C /* Debug */,
+				49402E960250002684DCE152DC342CE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

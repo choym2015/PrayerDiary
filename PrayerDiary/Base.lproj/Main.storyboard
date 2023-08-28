@@ -18,15 +18,225 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <segue destination="XqV-OU-Pt6" kind="show" identifier="register_segue" id="cuA-5f-Ux0"/>
+                        <segue destination="wXZ-di-11I" kind="show" identifier="prayerlist_segue" id="a0g-fu-nZX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="90"/>
         </scene>
+        <!--Prayer List View Controller-->
+        <scene sceneID="p5w-pi-CKl">
+            <objects>
+                <viewController id="wXZ-di-11I" customClass="PrayerListViewController" customModule="PrayerDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LxL-KY-Ih4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Yeo-M6-53P"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8sd-a4-luP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xUq-18-bwf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810" y="339"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="eX2-Kl-Z3g">
+            <objects>
+                <viewController id="XqV-OU-Pt6" customClass="RegisterViewController" customModule="PrayerDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kja-QM-7wv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CNw-70-SjN">
+                                <rect key="frame" x="50" y="329" width="314" height="150"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="나의 이름은?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IU5-JF-D5W">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="I6v-Az-Gzt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" textContentType="name"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="나의 아이디는?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AWg-b1-m86">
+                                        <rect key="frame" x="0.0" y="100" width="314" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="vzH-0J-JTB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" textContentType="nickname"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="AWg-b1-m86" firstAttribute="leading" secondItem="CNw-70-SjN" secondAttribute="leading" id="4Ak-uD-RfR"/>
+                                    <constraint firstAttribute="height" constant="150" id="bkl-Mt-eeH"/>
+                                    <constraint firstAttribute="trailing" secondItem="AWg-b1-m86" secondAttribute="trailing" id="dQK-5q-u96"/>
+                                    <constraint firstAttribute="trailing" secondItem="IU5-JF-D5W" secondAttribute="trailing" id="vQC-eG-vLs"/>
+                                    <constraint firstItem="IU5-JF-D5W" firstAttribute="leading" secondItem="CNw-70-SjN" secondAttribute="leading" id="ysL-VI-nCV"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Viq-wU-28e" customClass="PMSuperButton" customModule="PMSuperButton">
+                                <rect key="frame" x="107" y="708" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="fXQ-eZ-2cH"/>
+                                    <constraint firstAttribute="height" constant="50" id="qR7-EA-0kF"/>
+                                </constraints>
+                                <state key="normal" title="다음"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                        <color key="value" systemColor="systemPinkColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientHorizontal" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ripple" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rippleSpeed">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="XqV-OU-Pt6" eventType="touchUpInside" id="TCW-RG-rhu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aPF-H5-7zm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Viq-wU-28e" firstAttribute="centerX" secondItem="aPF-H5-7zm" secondAttribute="centerX" id="N4K-7w-Pae"/>
+                            <constraint firstItem="CNw-70-SjN" firstAttribute="centerX" secondItem="aPF-H5-7zm" secondAttribute="centerX" id="aWJ-Dk-bc4"/>
+                            <constraint firstItem="CNw-70-SjN" firstAttribute="centerY" secondItem="aPF-H5-7zm" secondAttribute="centerY" id="eou-ee-oP4"/>
+                            <constraint firstItem="CNw-70-SjN" firstAttribute="leading" secondItem="aPF-H5-7zm" secondAttribute="leading" constant="50" id="lgO-5t-Ish"/>
+                            <constraint firstItem="aPF-H5-7zm" firstAttribute="trailing" secondItem="CNw-70-SjN" secondAttribute="trailing" constant="50" id="pcq-oZ-idc"/>
+                            <constraint firstItem="aPF-H5-7zm" firstAttribute="bottom" secondItem="Viq-wU-28e" secondAttribute="bottom" constant="50" id="pe3-fa-QQ4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sFx-aa-yFG"/>
+                    <connections>
+                        <outlet property="idTextField" destination="AWg-b1-m86" id="8Aa-iK-Sd4"/>
+                        <outlet property="nameTextField" destination="IU5-JF-D5W" id="FNO-b8-24T"/>
+                        <outlet property="nextButton" destination="Viq-wU-28e" id="dib-e5-iku"/>
+                        <segue destination="fzl-fQ-aYe" kind="show" identifier="registerPartner_segue" id="xba-F1-r2X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zLr-ZB-kgm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1391" y="-410"/>
+        </scene>
+        <!--Register Partner View Controller-->
+        <scene sceneID="N3Z-Sn-eaI">
+            <objects>
+                <viewController id="fzl-fQ-aYe" customClass="RegisterPartnerViewController" customModule="PrayerDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XpT-qo-22F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gcF-VD-FOI">
+                                <rect key="frame" x="50" y="329" width="314" height="150"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="내 파트너 이름은?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LBF-eE-fY0">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="3kd-pq-LwY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" textContentType="name"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="내 파트너 아이디는?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qn6-rg-vWJ">
+                                        <rect key="frame" x="0.0" y="100" width="314" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="8HP-Nm-ad6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" textContentType="nickname"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="73f-vo-ijN"/>
+                                    <constraint firstItem="qn6-rg-vWJ" firstAttribute="leading" secondItem="gcF-VD-FOI" secondAttribute="leading" id="Kr1-ue-1hN"/>
+                                    <constraint firstItem="LBF-eE-fY0" firstAttribute="leading" secondItem="gcF-VD-FOI" secondAttribute="leading" id="Q8x-Wk-ZtP"/>
+                                    <constraint firstAttribute="trailing" secondItem="LBF-eE-fY0" secondAttribute="trailing" id="bA7-bz-JI7"/>
+                                    <constraint firstAttribute="trailing" secondItem="qn6-rg-vWJ" secondAttribute="trailing" id="l4U-ym-Af6"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uuf-WQ-372" customClass="PMSuperButton" customModule="PMSuperButton">
+                                <rect key="frame" x="107" y="708" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9Qb-DT-CB4"/>
+                                    <constraint firstAttribute="width" constant="200" id="Rhp-yt-Zkz"/>
+                                </constraints>
+                                <state key="normal" title="다음"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                        <color key="value" systemColor="systemOrangeColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                        <color key="value" systemColor="systemPinkColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientHorizontal" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ripple" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rippleSpeed">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="fzl-fQ-aYe" eventType="touchUpInside" id="XR8-aN-9YW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ofW-yD-tcq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Uuf-WQ-372" firstAttribute="centerX" secondItem="ofW-yD-tcq" secondAttribute="centerX" id="00D-NF-dha"/>
+                            <constraint firstItem="ofW-yD-tcq" firstAttribute="bottom" secondItem="Uuf-WQ-372" secondAttribute="bottom" constant="50" id="3j2-dL-EuX"/>
+                            <constraint firstItem="gcF-VD-FOI" firstAttribute="centerY" secondItem="ofW-yD-tcq" secondAttribute="centerY" id="PQ6-G4-pDB"/>
+                            <constraint firstItem="ofW-yD-tcq" firstAttribute="trailing" secondItem="gcF-VD-FOI" secondAttribute="trailing" constant="50" id="ecH-pc-mw7"/>
+                            <constraint firstItem="gcF-VD-FOI" firstAttribute="leading" secondItem="ofW-yD-tcq" secondAttribute="leading" constant="50" id="lBc-Hq-jCE"/>
+                            <constraint firstItem="gcF-VD-FOI" firstAttribute="centerX" secondItem="ofW-yD-tcq" secondAttribute="centerX" id="lab-3V-0GM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vMa-NK-gcR"/>
+                    <connections>
+                        <outlet property="idTextField" destination="qn6-rg-vWJ" id="c28-Nh-HbA"/>
+                        <outlet property="nameTextField" destination="LBF-eE-fY0" id="CrM-02-hiC"/>
+                        <outlet property="nextButton" destination="Uuf-WQ-372" id="FOu-Hp-b96"/>
+                        <segue destination="wXZ-di-11I" kind="show" identifier="prayerlist_segue2" id="SfD-aF-9m0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Na6-h6-kby" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2226" y="-410"/>
+        </scene>
     </scenes>
+    <designables>
+        <designable name="Uuf-WQ-372">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
+    <inferredMetricsTieBreakers>
+        <segue reference="SfD-aF-9m0"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -1,0 +1,16 @@
+PODS:
+  - PMSuperButton (3.0.2)
+
+DEPENDENCIES:
+  - PMSuperButton
+
+SPEC REPOS:
+  trunk:
+    - PMSuperButton
+
+SPEC CHECKSUMS:
+  PMSuperButton: 72105fef415890c8792a9e5a784f75c461066f8b
+
+PODFILE CHECKSUM: 92b00ec7126eb20a252e579cfbd20708240eef03
+
+COCOAPODS: 1.12.1
