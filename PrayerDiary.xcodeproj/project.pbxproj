@@ -17,6 +17,9 @@
 		C76C77302A959C5300A20B91 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C772F2A959C5300A20B91 /* Manager.swift */; };
 		C76C77322A9C326F00A20B91 /* RegisterPartnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C77312A9C326F00A20B91 /* RegisterPartnerViewController.swift */; };
 		C76C77342A9C331300A20B91 /* PrayerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76C77332A9C331300A20B91 /* PrayerListViewController.swift */; };
+		C7EAE9C62AACF246003B7D8A /* Prayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EAE9C52AACF246003B7D8A /* Prayer.swift */; };
+		C7EAE9CB2AACF741003B7D8A /* PrayerListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EAE9C92AACF741003B7D8A /* PrayerListTableViewCell.swift */; };
+		C7EAE9CC2AACF741003B7D8A /* PrayerListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7EAE9CA2AACF741003B7D8A /* PrayerListTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		C76C772F2A959C5300A20B91 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		C76C77312A9C326F00A20B91 /* RegisterPartnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPartnerViewController.swift; sourceTree = "<group>"; };
 		C76C77332A9C331300A20B91 /* PrayerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerListViewController.swift; sourceTree = "<group>"; };
+		C7EAE9C52AACF246003B7D8A /* Prayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prayer.swift; sourceTree = "<group>"; };
+		C7EAE9C92AACF741003B7D8A /* PrayerListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerListTableViewCell.swift; sourceTree = "<group>"; };
+		C7EAE9CA2AACF741003B7D8A /* PrayerListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrayerListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,7 @@
 		C76C770D2A940B8100A20B91 /* PrayerDiary */ = {
 			isa = PBXGroup;
 			children = (
+				C7EAE9C42AACF23B003B7D8A /* Model */,
 				C76C772E2A9597D700A20B91 /* ViewControllers */,
 				C76C770E2A940B8100A20B91 /* AppDelegate.swift */,
 				C76C77142A940B8100A20B91 /* Main.storyboard */,
@@ -100,12 +107,38 @@
 		C76C772E2A9597D700A20B91 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C7EAE9C82AACF728003B7D8A /* PrayerList */,
+				C7EAE9C72AACF71B003B7D8A /* Registration */,
 				C76C77122A940B8100A20B91 /* ViewController.swift */,
-				C76C772C2A9597D300A20B91 /* RegisterViewController.swift */,
-				C76C77312A9C326F00A20B91 /* RegisterPartnerViewController.swift */,
-				C76C77332A9C331300A20B91 /* PrayerListViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C7EAE9C42AACF23B003B7D8A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7EAE9C52AACF246003B7D8A /* Prayer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C7EAE9C72AACF71B003B7D8A /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				C76C772C2A9597D300A20B91 /* RegisterViewController.swift */,
+				C76C77312A9C326F00A20B91 /* RegisterPartnerViewController.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		C7EAE9C82AACF728003B7D8A /* PrayerList */ = {
+			isa = PBXGroup;
+			children = (
+				C76C77332A9C331300A20B91 /* PrayerListViewController.swift */,
+				C7EAE9C92AACF741003B7D8A /* PrayerListTableViewCell.swift */,
+				C7EAE9CA2AACF741003B7D8A /* PrayerListTableViewCell.xib */,
+			);
+			path = PrayerList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +202,7 @@
 			files = (
 				C76C771B2A940B8200A20B91 /* LaunchScreen.storyboard in Resources */,
 				C76C77182A940B8200A20B91 /* Assets.xcassets in Resources */,
+				C7EAE9CC2AACF741003B7D8A /* PrayerListTableViewCell.xib in Resources */,
 				C76C77162A940B8100A20B91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,10 +258,12 @@
 			files = (
 				C76C772D2A9597D300A20B91 /* RegisterViewController.swift in Sources */,
 				C76C77132A940B8100A20B91 /* ViewController.swift in Sources */,
+				C7EAE9CB2AACF741003B7D8A /* PrayerListTableViewCell.swift in Sources */,
 				C76C77322A9C326F00A20B91 /* RegisterPartnerViewController.swift in Sources */,
 				C76C770F2A940B8100A20B91 /* AppDelegate.swift in Sources */,
 				C76C77302A959C5300A20B91 /* Manager.swift in Sources */,
 				C76C77342A9C331300A20B91 /* PrayerListViewController.swift in Sources */,
+				C7EAE9C62AACF246003B7D8A /* Prayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

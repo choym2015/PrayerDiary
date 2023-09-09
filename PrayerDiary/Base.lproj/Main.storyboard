@@ -34,10 +34,42 @@
                     <view key="view" contentMode="scaleToFill" id="LxL-KY-Ih4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D8P-bI-IQ8">
+                                <rect key="frame" x="0.0" y="50" width="414" height="758"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UZJ-nQ-42d">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Zz9-2b-Zf6"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="indexChanged:" destination="wXZ-di-11I" eventType="valueChanged" id="3Am-xZ-ucA"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Yeo-M6-53P"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Yeo-M6-53P" firstAttribute="trailing" secondItem="UZJ-nQ-42d" secondAttribute="trailing" id="3kN-YV-F4O"/>
+                            <constraint firstItem="D8P-bI-IQ8" firstAttribute="leading" secondItem="Yeo-M6-53P" secondAttribute="leading" id="CyA-O4-AEW"/>
+                            <constraint firstItem="Yeo-M6-53P" firstAttribute="trailing" secondItem="D8P-bI-IQ8" secondAttribute="trailing" id="OFU-h1-80t"/>
+                            <constraint firstItem="UZJ-nQ-42d" firstAttribute="leading" secondItem="Yeo-M6-53P" secondAttribute="leading" id="OSx-fb-raf"/>
+                            <constraint firstItem="D8P-bI-IQ8" firstAttribute="top" secondItem="UZJ-nQ-42d" secondAttribute="bottom" id="Yba-QN-QdC"/>
+                            <constraint firstItem="UZJ-nQ-42d" firstAttribute="top" secondItem="Yeo-M6-53P" secondAttribute="top" id="g6A-0V-hj6"/>
+                            <constraint firstItem="Yeo-M6-53P" firstAttribute="bottom" secondItem="D8P-bI-IQ8" secondAttribute="bottom" id="vgC-S4-TVx"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8sd-a4-luP"/>
+                    <connections>
+                        <outlet property="prayerTableView" destination="D8P-bI-IQ8" id="YiE-ar-Ifh"/>
+                        <outlet property="segmentControl" destination="UZJ-nQ-42d" id="7c5-Ih-7Hh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xUq-18-bwf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -222,6 +254,9 @@
     </scenes>
     <designables>
         <designable name="Uuf-WQ-372">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="Viq-wU-28e">
             <size key="intrinsicContentSize" width="30" height="30"/>
         </designable>
     </designables>
